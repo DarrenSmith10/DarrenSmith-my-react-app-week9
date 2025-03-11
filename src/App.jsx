@@ -6,13 +6,18 @@ import Contact from './components/Contact';
 import Search from './components/Search';
 import Portfolio from './components/Portfolio';
 import PortfolioItem from './components/PortfolioItem';
-
+import myImage from "./assets/images/DarrenNewProfile.jpg";
+import mylogo from "./assets/images/MonsterNormalnormal1.png";
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div>
+      <div>
+        <img src={mylogo} class = "logo react" alt="React logo" width="100" />
+        <img src={myImage} class = "header-avatar" alt="Home" width="300" />
+      </div>
         <nav>
           <ul>
             <li>

@@ -1,10 +1,12 @@
 import React from 'react';
+import Form from './Form';
 
 function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the Home Page!</p>
+      <h1>Contact</h1>
+      <p>Fill in Contact form below</p>
+      <Form />
     </div>
   );
 }

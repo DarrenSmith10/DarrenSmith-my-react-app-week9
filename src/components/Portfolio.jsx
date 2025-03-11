@@ -1,20 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PortfolioItem1 from '../assets/images/first-react-app.png';
+import PortfolioItem2 from '../assets/images/full-stack-blog.png';
+import PortfolioItem3 from '../assets/images/full-stack-notetaker.png';
+
 
 function Portfolio() {
   return (
     <div>
       <h1>Portfolio Page</h1>
       <p>Select a portfolio item to view details:</p>
-      <ul>
+      <ul class = "portfolio-list">
         <li>
-          <Link to="/portfolio/1">Portfolio Item 1</Link>
+          <div>
+            <img src={PortfolioItem1} class = "header-avatar" alt="Home" width="200" height = "200" />
+          </div>
+          <Link to="/portfolio/1"> First React App </Link>
         </li>
         <li>
-          <Link to="/portfolio/2">Portfolio Item 2</Link>
+          <div>
+            <img src={PortfolioItem2} class = "header-avatar" alt="Home" width="200" height = "200"  />
+          </div>
+          <Link to="/portfolio/2"> Full Stack Blog Application </Link>
         </li>
         <li>
-          <Link to="/portfolio/3">Portfolio Item 3</Link>
+          <div>
+            <img src={PortfolioItem3} class = "header-avatar" alt="Home" width="200" height = "200"  />
+          </div>
+          <Link to="/portfolio/3"> Full Stacks note taker </Link>
         </li>
       </ul>
     </div>

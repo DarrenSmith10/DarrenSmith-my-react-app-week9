@@ -6,32 +6,41 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  /* height: 6em;
+  padding: 1.5em; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
+/* .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+.logo.react {
+  /* animation: logo-spin infinite 10s linear; */
+  animation: logo-filter 10s infinite;
 }
 
-@keyframes logo-spin {
+/* .logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+
+@keyframes logo-filter {
   from {
-    transform: rotate(0deg);
+    filter: drop-shadow(0 0 1em #09cae3e7);
   }
   to {
-    transform: rotate(360deg);
+    filter: drop-shadow(0 0 1em #f40bc9dd);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+/* @media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo.react {
     animation: logo-spin infinite 20s linear;
   }
-}
+} */
 
 .card {
   padding: 2em;
