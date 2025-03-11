@@ -10,7 +10,8 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: 'Darren',
     email: 'darren55@email.co.uk',
-    message: ''
+    message: '', // Add message field to form
+    referral: '', // Add referral field to form
   });
 
   const handleChange = (e) => {
@@ -29,7 +30,7 @@ const Form = () => {
     }
 
     alert(`Form submitted:\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
-    setFormData({ name: "", email: "", message: "" }); // Reset form after submit
+    setFormData({ name: "", email: "", message: "" , referral: "" }); // Reset form after submit
   };
 
   return (
@@ -69,10 +70,21 @@ const Form = () => {
             />
           </label>
         </div>
+          <div className="form-group">
+          <label>
+            Where did you hear about us?
+            <select name = "referral" value={formData.referral} onChange={handleChange}>
+              <option value="Search Engine">Google</option>
+              <option value="Social Media">Media</option>
+              <option value="Word of mouth">Word of mouth</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+        </div>
         <button type="submit" className="submit-button">Submit</button>
       </form>
     </div>
   );
-}
+};
 
 export default Form;
