@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(217, 157, 157, 0.87);
+  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
-  color: #1a20a1;
+  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
@@ -54,39 +54,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.header-box {
-  display: flex
-;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: #e7e7e7;
-  border-radius: 10px;
-}
-
-.header-avatar {
-  display: block;
-  margin: auto;
-  border-radius: 100%;
-  width: 200px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  border: 4px solid #fff;
-}
-
-.header-subtitle {
-  font-family: "Futura Md BT", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0em;
-  text-align: center;
-  border-bottom: 4px solid #e7e7e7;
-  margin-bottom: 20px;
-}
-
-
-
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -99,5 +66,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-   
